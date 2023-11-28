@@ -1,4 +1,12 @@
 import './App.css'
+import ilustracion from './assets/img/ilustracion.svg'
+import ilustracion1 from './assets/img/ilustracion1.svg'
+import uno from './assets/img/uno.jpg'
+import dos from './assets/img/dos.jpg'
+import tres from './assets/img/tres.jpg'
+import cuatro from './assets/img/cuatro.jpg'
+import cinco from './assets/img/cinco.jpg'
+import seis from './assets/img/seis.jpg'
 
 function App ({ saludo, nombre }) {
   return (
@@ -23,7 +31,7 @@ function App ({ saludo, nombre }) {
         </div>
       </header>
       <section className='wave-contenedor website'>
-        <img src='img/ilustracion1.svg' alt='' />
+        <img src={ilustracion1} alt='' />
         <div className='contenedor-textos-main'>
           <h2 className='titulo left'>Title of section</h2>
           <p className='parrafo'>
@@ -75,12 +83,12 @@ function App ({ saludo, nombre }) {
         <div className='contenedor'>
           <h2 className='titulo'>Our work</h2>
           <article className='galeria-cont'>
-            <img src='img/uno.jpg' alt='' />
-            <img src='img/dos.jpg' alt='' />
-            <img src='img/tres.jpg' alt='' />
-            <img src='img/cuatro.jpg' alt='' />
-            <img src='img/cinco.jpg' alt='' />
-            <img src='img/seis.jpg' alt='' />
+            <img src={uno} alt='' />
+            <img src={dos} alt='' />
+            <img src={tres} alt='' />
+            <img src={cuatro} alt='' />
+            <img src={cinco} alt='' />
+            <img src={seis} alt='' />
           </article>
         </div>
       </section>
@@ -97,7 +105,7 @@ function App ({ saludo, nombre }) {
               Learn more
             </a>
           </div>
-          <img src='img/ilustracion.svg' alt='' />
+          <img src={ilustracion} alt='' />
         </div>
         <div className='svg-wave' style={{ height: 150, overflow: 'hidden' }}>
           <svg
