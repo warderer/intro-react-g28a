@@ -1,24 +1,25 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+// eslint-disable-next-line import/no-absolute-path
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App({saludo, nombre}) {
+function App ({ saludo, nombre }) {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+        <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
+          <img src={viteLogo} className='logo' alt='Vite logo' />
         </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href='https://react.dev' target='_blank' rel='noreferrer'>
+          <img src={reactLogo} className='logo react' alt='React logo' />
         </a>
       </div>
       <h1>Hola G26</h1>
       <h2>{saludo} {nombre}</h2>
-      <div className="card">
+      <div className='card'>
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -26,7 +27,7 @@ function App({saludo, nombre}) {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
+      <p className='read-the-docs'>
         Click on the Vite and React logos to learn more
       </p>
     </>
