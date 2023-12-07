@@ -1,10 +1,12 @@
+import { NavLink } from 'react-router-dom'
+
 const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg bg-warning'>
       <div className='container-fluid'>
-        <a className='navbar-brand' href='#'>
+        <NavLink className='navbar-brand' to='#'>
           Pokédex
-        </a>
+        </NavLink>
         <button
           className='navbar-toggler'
           type='button'
@@ -20,15 +22,15 @@ const Navbar = () => {
           <ul className='navbar-nav'>
 
             <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='/'>
+              <NavLink className='nav-link active' aria-current='page' to='/'>
                 Home
-              </a>
+              </NavLink>
             </li>
 
             <li className='nav-item'>
-              <a className='nav-link' href='/about'>
+              <NavLink className='nav-link' to='/about'>
                 Acerca de Pokémon
-              </a>
+              </NavLink>
             </li>
 
           </ul>
